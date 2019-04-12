@@ -1,7 +1,11 @@
-<div class="jumbotron">
-  <h1 class="display-4">Coding Material Review.</h1>
-  <br>
-  <p class="lead">プログラミング教材をレビューしよう</p>
-  <hr class="my-4">
-  <%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-primary' %>
-</div>
+<% if logged_in? %>
+  <p>ログイン完了ユーザ: <%= current_user.name %></p>
+<% else %>
+  <div class="jumbotron">
+    <h1 class="display-4">Coding Material Review.</h1>
+    <br>
+    <p class="lead">プログラミング教材をレビューしよう</p>
+    <hr class="my-4">
+    <%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-primary' %>
+  </div>
+<% end %>
