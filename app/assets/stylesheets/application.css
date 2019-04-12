@@ -1,0 +1,6 @@
+.jumbotron {
+  background-image: url("bg-pc.jpg");
+  background-size: cover;
+  color:#fff;
+  font-family: 'Kosugi Maru', sans-serif;
+}
