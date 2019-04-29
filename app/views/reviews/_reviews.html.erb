@@ -1,0 +1,8 @@
+
+  <% reviews.each do |review| %>
+  <ul class="list-group">
+    <li class="list-group-item bc-gray">教材名 : <%= review.title %></li>
+    <li class="list-group-item mb-3">レビュー : <%= review.content %></li> 
+  </ul>  
+  <% end %>
+  <%= paginate reviews %>

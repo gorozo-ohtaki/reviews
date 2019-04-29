@@ -24,3 +24,11 @@
   font-size: 2.3rem;
   color:rgba(0,0,0,0.7);
 }
+
+.bc-gray {
+  background-color: rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+.list-group-item {
+  width: 100%;
+}
